@@ -29,18 +29,19 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="hero-section text-white text-center d-flex align-items-center justify-content-center">
-    <video autoplay muted loop class="bg-video">
-      <source src="assets/background-video.mp4" type="video/mp4" />
-      Browser tidak mendukung video.
-    </video>
-    <div class="overlay"></div>
-    <div class="container position-relative z-1">
-      <h1 class="display-5 fw-bold text-glow" data-aos="fade-down">Solusi Cutting & Signage</h1>
-      <p class="lead" data-aos="fade-up" data-aos-delay="200">Laser Cutting | Neon Box | Huruf Timbul | Merchandise & Custom</p>
-      <a href="https://wa.me/6281234567890" class="btn btn-success mt-3" data-aos="fade-up" data-aos-delay="300">Pesan Sekarang</a>
-    </div>
-  </header>
+  <header class="hero-section">
+  <video autoplay muted loop class="bg-video">
+    <source src="assets/background-video.mp4" type="video/mp4" />
+    Browser Anda tidak mendukung video.
+  </video>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1 class="display-4 fw-bold text-glow">Solusi Cutting & Signage</h1>
+    <p class="lead mb-4">Laser Cutting | Neon Box | Huruf Timbul | Merchandise & Custom</p>
+    <a href="https://wa.me/6281234567890" class="btn btn-success btn-hero">Pesan Sekarang</a>
+  </div>
+</header>
+
 
   <!-- Produk -->
   <section class="container py-5" id="produk">
@@ -126,21 +127,75 @@
   </section>
 
   <!-- Lokasi + Footer -->
-  <section class="bg-dark text-white pt-5 pb-3" id="lokasi">
-    <div class="container">
-      <h2 class="text-center mb-4" data-aos="fade-up">Lokasi Kami</h2>
-      <div class="ratio ratio-16x9 mb-4" style="height: 250px;" data-aos="zoom-in">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63355.50211818633!2d107.51519739094265!3d-6.872399811960478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e590b091f79f%3A0x32c7881bcf3e6de3!2sPadasuka%2C%20Kec.%20Cimahi%20Tengah%2C%20Kota%20Cimahi%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1716095185139!5m2!1sid!2sid"
-          style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-      </div>
-      <footer class="text-center">
-        <small>© 2025 Studio 3 Cimahi - Solusi Kreatif untuk Identitas Visual Anda</small>
-      </footer>
+<section class="bg-dark text-white pt-5 pb-3" id="lokasi">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-up">Lokasi Kami</h2>
+    <div class="ratio ratio-16x9 mb-4" style="height: 250px;" data-aos="zoom-in">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63355.50211818633!2d107.51519739094265!3d-6.872399811960478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e590b091f79f%3A0x32c7881bcf3e6de3!2sPadasuka%2C%20Kec.%20Cimahi%20Tengah%2C%20Kota%20Cimahi%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1716095185139!5m2!1sid!2sid"
+        style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
     </div>
-  </section>
+  </div>
 
+  <!-- Footer -->
+  <footer class="bg-dark text-white mt-4">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5 class="mb-3"><i class="fas fa-cut me-2"></i>Studio 3 Cimahi</h5>
+          <p class="text-muted">Solusi profesional untuk kebutuhan signage dan cutting Anda dengan kualitas terbaik dan harga kompetitif.</p>
+          <div class="social-icons mt-3">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="mb-3">Menu</h5>
+          <ul class="list-unstyled footer-links">
+            <li class="mb-2"><a href="#home" class="text-white">Beranda</a></li>
+            <li class="mb-2"><a href="#produk" class="text-white">Produk</a></li>
+            <li class="mb-2"><a href="#galeri" class="text-white">Galeri</a></li>
+            <li class="mb-2"><a href="#testimoni" class="text-white">Testimoni</a></li>
+            <li><a href="#kontak" class="text-white">Kontak</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="mb-3">Produk</h5>
+          <ul class="list-unstyled footer-links">
+            <li class="mb-2"><a href="#" class="text-white">Neon Flex</a></li>
+            <li class="mb-2"><a href="#" class="text-white">Neon Box</a></li>
+            <li class="mb-2"><a href="#" class="text-white">Huruf Timbul</a></li>
+            <li class="mb-2"><a href="#" class="text-white">Laser Cutting</a></li>
+            <li><a href="#" class="text-white">Merchandise</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3">Jam Buka</h5>
+          <ul class="list-unstyled text-muted">
+            <li class="mb-2">Senin-Jumat: 08.00 - 17.00</li>
+            <li class="mb-2">Sabtu: 08.00 - 15.00</li>
+            <li>Minggu: Tutup</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright text-center mt-4">
+        <p class="mb-0 text-muted">&copy; 2025 Studio 3 Cimahi. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+</section>
+
+<!-- WhatsApp Float Button -->
+<a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
   <!-- Modals Produk -->
   <div class="modal fade" id="produk1Modal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
