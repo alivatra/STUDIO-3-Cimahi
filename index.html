@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,39 +9,43 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
-    <div class="container">
-      <a class="navbar-brand fw-bold text-glow" href="#">Studio 3 Cimahi</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
-          <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
-          <li class="nav-item"><a class="nav-link" href="#ulasan">Ulasan</a></li>
-          <li class="nav-item"><a class="nav-link" href="#lokasi">Lokasi</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-glow" href="#">
+      <img src="assets/Studio3.png" alt="Logo" style="height:40px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+        <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li> <!-- Diubah -->
+        <li class="nav-item"><a class="nav-link" href="#ulasan">Ulasan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#lokasi">Lokasi</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- Hero Section -->
   <header class="hero-section">
-  <video autoplay muted loop class="bg-video">
-    <source src="assets/background-video.mp4" type="video/mp4" />
-    Browser Anda tidak mendukung video.
-  </video>
-  <div class="overlay"></div>
-  <div class="content">
-    <h1 class="display-4 fw-bold text-glow">Solusi Cutting & Signage</h1>
-    <p class="lead mb-4">Laser Cutting | Neon Box | Huruf Timbul | Merchandise & Custom</p>
-    <a href="https://wa.me/6281234567890" class="btn btn-success btn-hero">Pesan Sekarang</a>
-  </div>
-</header>
+    <video autoplay muted loop class="bg-video">
+      <source src="assets/background-video.mp4" type="video/mp4" />
+      Browser Anda tidak mendukung video.
+    </video>
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 class="display-4 fw-bold text-glow">Solusi Cutting & Signage</h1>
+      <p class="lead mb-4">Laser Cutting | Neon Box | Huruf Timbul | Merchandise & Custom</p>
+      <a href="https://wa.me/62895372760500" class="btn btn-success btn-hero">Pesan Sekarang</a>
+    </div>
+  </header>
 
 
   <!-- Produk -->
@@ -81,25 +86,29 @@
   </section>
 
   <!-- Galeri Carousel -->
-  <section class="bg-light py-5" id="galeri">
-    <div class="container">
-      <h2 class="text-center mb-4" data-aos="fade-up">Galeri</h2>
-      <div class="carousel-gallery d-flex overflow-auto pb-3">
-        <script>
-          const galeriList = [
-            'IMG-20250518-WA0007.jpg','IMG-20250518-WA0008.jpg','IMG-20250518-WA0009.jpg','IMG-20250518-WA0010.jpg',
-            'IMG-20250518-WA0012.jpg','IMG-20250518-WA0013.jpg','IMG-20250518-WA0014.jpg','IMG-20250518-WA0015.jpg',
-            'IMG-20250518-WA0016.jpg','IMG-20250518-WA0017.jpg','IMG-20250518-WA0018.jpg','IMG-20250519-WA0001.jpg',
-            'IMG-20250519-WA0002.jpg','IMG-20250519-WA0003.jpg','IMG-20250519-WA0004.jpg','IMG-20250519-WA0005.jpg',
-            'IMG-20250519-WA0006.jpg','IMG-20250519-WA0007.jpg','IMG-20250519-WA0008.jpg','IMG-20250519-WA0009.jpg'
-          ];
-          galeriList.forEach(name => {
-            document.write(`<img src="assets/${name}" class="rounded shadow-sm mx-2" style="width:200px;height:140px;object-fit:cover;" alt="${name}" />`);
-          });
-        </script>
-      </div>
+ <section class="bg-light py-5" id="galeri">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-up">
+      <a href="galeri.html" class="text-decoration-none text-dark">Galeri</a>
+    </h2>
+    <!-- Bungkus div galeri dengan onclick -->
+    <div class="carousel-gallery d-flex overflow-auto pb-3" onclick="window.location='galeri.html'" style="cursor:pointer;">
+      <script>
+        const galeriList = [
+          'IMG-20250518-WA0007.jpg', 'IMG-20250518-WA0008.jpg', 'IMG-20250518-WA0009.jpg', 'IMG-20250518-WA0010.jpg',
+          'IMG-20250518-WA0012.jpg', 'IMG-20250518-WA0013.jpg', 'IMG-20250518-WA0014.jpg', 'IMG-20250518-WA0015.jpg',
+          'IMG-20250518-WA0016.jpg', 'IMG-20250518-WA0017.jpg', 'IMG-20250518-WA0018.jpg', 'IMG-20250519-WA0001.jpg',
+          'IMG-20250519-WA0002.jpg', 'IMG-20250519-WA0003.jpg', 'IMG-20250519-WA0004.jpg', 'IMG-20250519-WA0005.jpg',
+          'IMG-20250519-WA0006.jpg', 'IMG-20250519-WA0007.jpg', 'IMG-20250519-WA0008.jpg', 'IMG-20250519-WA0009.jpg'
+        ];
+        galeriList.forEach(name => {
+          document.write(`<img src="assets/${name}" class="rounded shadow-sm mx-2" style="width:200px;height:140px;object-fit:cover;" alt="${name}" />`);
+        });
+      </script>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Ulasan -->
   <section class="container py-5" id="ulasan">
@@ -127,107 +136,122 @@
   </section>
 
   <!-- Lokasi + Footer -->
-<section class="bg-dark text-white pt-5 pb-3" id="lokasi">
-  <div class="container">
-    <h2 class="text-center mb-4" data-aos="fade-up">Lokasi Kami</h2>
-    <div class="ratio ratio-16x9 mb-4" style="height: 250px;" data-aos="zoom-in">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63355.50211818633!2d107.51519739094265!3d-6.872399811960478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e590b091f79f%3A0x32c7881bcf3e6de3!2sPadasuka%2C%20Kec.%20Cimahi%20Tengah%2C%20Kota%20Cimahi%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1716095185139!5m2!1sid!2sid"
-        style="border:0;" allowfullscreen="" loading="lazy">
-      </iframe>
+  <section class="bg-dark text-white pt-5 pb-3" id="lokasi">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-up">Lokasi Kami</h2>
+      <div class="ratio ratio-16x9 mb-4" style="height: 250px;" data-aos="zoom-in">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63355.50211818633!2d107.51519739094265!3d-6.872399811960478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e590b091f79f%3A0x32c7881bcf3e6de3!2sPadasuka%2C%20Kec.%20Cimahi%20Tengah%2C%20Kota%20Cimahi%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1716095185139!5m2!1sid!2sid"
+          style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
     </div>
-  </div>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white mt-4">
-    <div class="container py-4">
-      <div class="row">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <h5 class="mb-3"><i class="fas fa-cut me-2"></i>Studio 3 Cimahi</h5>
-          <p class="text-muted">Solusi profesional untuk kebutuhan signage dan cutting Anda dengan kualitas terbaik dan harga kompetitif.</p>
-          <div class="social-icons mt-3">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-4">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h5 class="mb-3"><i class="fas fa-cut me-2"></i>Studio 3 Cimahi</h5>
+            <p class="text-muted">Solusi profesional untuk kebutuhan signage dan cutting Anda dengan kualitas terbaik
+              dan harga kompetitif.</p>
+            <div class="social-icons mt-3">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-3">Menu</h5>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="#home" class="text-white">Beranda</a></li>
+              <li class="mb-2"><a href="#produk" class="text-white">Produk</a></li>
+              <li class="mb-2"><a href="#galeri" class="text-white">Galeri</a></li>
+              <li class="mb-2"><a href="#testimoni" class="text-white">Testimoni</a></li>
+              <li><a href="#kontak" class="text-white">Kontak</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-3">Produk</h5>
+            <ul class="list-unstyled footer-links">
+              <li class="mb-2"><a href="#" class="text-white">Neon Flex</a></li>
+              <li class="mb-2"><a href="#" class="text-white">Neon Box</a></li>
+              <li class="mb-2"><a href="#" class="text-white">Huruf Timbul</a></li>
+              <li class="mb-2"><a href="#" class="text-white">Laser Cutting</a></li>
+              <li><a href="#" class="text-white">Merchandise</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">Jam Buka</h5>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-2">Senin-Jumat: 08.00 - 17.00</li>
+              <li class="mb-2">Sabtu: 08.00 - 15.00</li>
+              <li>Minggu: Tutup</li>
+            </ul>
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-          <h5 class="mb-3">Menu</h5>
-          <ul class="list-unstyled footer-links">
-            <li class="mb-2"><a href="#home" class="text-white">Beranda</a></li>
-            <li class="mb-2"><a href="#produk" class="text-white">Produk</a></li>
-            <li class="mb-2"><a href="#galeri" class="text-white">Galeri</a></li>
-            <li class="mb-2"><a href="#testimoni" class="text-white">Testimoni</a></li>
-            <li><a href="#kontak" class="text-white">Kontak</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="mb-3">Produk</h5>
-          <ul class="list-unstyled footer-links">
-            <li class="mb-2"><a href="#" class="text-white">Neon Flex</a></li>
-            <li class="mb-2"><a href="#" class="text-white">Neon Box</a></li>
-            <li class="mb-2"><a href="#" class="text-white">Huruf Timbul</a></li>
-            <li class="mb-2"><a href="#" class="text-white">Laser Cutting</a></li>
-            <li><a href="#" class="text-white">Merchandise</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <h5 class="mb-3">Jam Buka</h5>
-          <ul class="list-unstyled text-muted">
-            <li class="mb-2">Senin-Jumat: 08.00 - 17.00</li>
-            <li class="mb-2">Sabtu: 08.00 - 15.00</li>
-            <li>Minggu: Tutup</li>
-          </ul>
+        <div class="copyright text-center mt-4">
+          <p class="mb-0 text-muted">&copy; 2025 Studio 3 Cimahi. All Rights Reserved.</p>
         </div>
       </div>
+    </footer>
+  </section>
 
-      <div class="copyright text-center mt-4">
-        <p class="mb-0 text-muted">&copy; 2025 Studio 3 Cimahi. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>
-</section>
-
-<!-- WhatsApp Float Button -->
-<a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank">
-  <i class="fab fa-whatsapp"></i>
-</a>
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/62895372760500" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
   <!-- Modals Produk -->
   <div class="modal fade" id="produk1Modal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
-      <div class="modal-header"><h5 class="modal-title">Neon Flexy</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <img src="assets/neonflex.jpg" class="img-fluid mb-3" alt="Neon Flexy" />
-        <p>Lampu fleksibel untuk dekorasi dan promosi usaha Anda.</p>
-        <a href="https://wa.me/6281234567890" class="btn btn-success w-100">Pesan Sekarang</a>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Neon Flexy</h5><button type="button" class="btn-close"
+            data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/neonflex.jpg" class="img-fluid mb-3" alt="Neon Flexy" />
+          <p>Lampu fleksibel untuk dekorasi dan promosi usaha Anda.</p>
+          <a href="https://wa.me/62895372760500" class="btn btn-success w-100">Pesan Sekarang</a>
+        </div>
       </div>
-    </div></div>
+    </div>
   </div>
 
   <div class="modal fade" id="produk2Modal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
-      <div class="modal-header"><h5 class="modal-title">Neon Box</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <img src="assets/neonbox.jpg" class="img-fluid mb-3" alt="Neon Box" />
-        <p>Identitas visual bisnis Anda dengan pencahayaan menarik.</p>
-        <a href="https://wa.me/6281234567890" class="btn btn-success w-100">Pesan Sekarang</a>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Neon Box</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/neonbox.jpg" class="img-fluid mb-3" alt="Neon Box" />
+          <p>Identitas visual bisnis Anda dengan pencahayaan menarik.</p>
+          <a href="https://wa.me/62895372760500" class="btn btn-success w-100">Pesan Sekarang</a>
+        </div>
       </div>
-    </div></div>
+    </div>
   </div>
 
   <div class="modal fade" id="produk3Modal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
-      <div class="modal-header"><h5 class="modal-title">Huruf Timbul</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <img src="assets/huruf.jpg" class="img-fluid mb-3" alt="Huruf Timbul" />
-        <p>Huruf 3D dengan bahan pilihan dan tampilan elegan.</p>
-        <a href="https://wa.me/6281234567890" class="btn btn-success w-100">Pesan Sekarang</a>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Huruf Timbul</h5><button type="button" class="btn-close"
+            data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/huruf.jpg" class="img-fluid mb-3" alt="Huruf Timbul" />
+          <p>Huruf 3D dengan bahan pilihan dan tampilan elegan.</p>
+          <a href="https://wa.me/62895372760500" class="btn btn-success w-100">Pesan Sekarang</a>
+        </div>
       </div>
-    </div></div>
+    </div>
   </div>
 
   <!-- Scripts -->
@@ -244,4 +268,5 @@
     }, 25);
   </script>
 </body>
+
 </html>

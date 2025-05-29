@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeri</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .galeri-img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .text-glow {
+      text-shadow: 0 0 8px rgba(255,255,255,0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-glow" href="index.html">
+        <img src="assets/Studio3.png" alt="Logo" style="height:40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#produk">Produk</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#ulasan">Ulasan</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#lokasi">Lokasi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Galeri Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Galeri Foto</h2>
+      <div class="row g-3">
+        <script>
+          const galeriList = [
+            'IMG-20250518-WA0007.jpg', 'IMG-20250518-WA0008.jpg', 'IMG-20250518-WA0009.jpg', 'IMG-20250518-WA0010.jpg',
+            'IMG-20250518-WA0012.jpg', 'IMG-20250518-WA0013.jpg', 'IMG-20250518-WA0014.jpg', 'IMG-20250518-WA0015.jpg',
+            'IMG-20250518-WA0016.jpg', 'IMG-20250518-WA0017.jpg', 'IMG-20250518-WA0018.jpg', 'IMG-20250519-WA0001.jpg',
+            'IMG-20250519-WA0002.jpg', 'IMG-20250519-WA0003.jpg', 'IMG-20250519-WA0004.jpg', 'IMG-20250519-WA0005.jpg',
+            'IMG-20250519-WA0006.jpg', 'IMG-20250519-WA0007.jpg', 'IMG-20250519-WA0008.jpg', 'IMG-20250519-WA0009.jpg'
+          ];
+          galeriList.forEach(name => {
+            document.write(`
+              <div class="col-6 col-md-4 col-lg-3">
+                <img src="assets/${name}" class="w-100 rounded shadow galeri-img" alt="${name}">
+              </div>
+            `);
+          });
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-3 mt-5">
+    <div class="container">
+      <small>&copy; 2025 Jajanan Kita. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
